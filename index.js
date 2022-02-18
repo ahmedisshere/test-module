@@ -51,5 +51,5 @@
      }   
  }
 
- let object3 = new Car(4, 69,"yellow");
+ let object3 = new Car(4, 69,"green");
  console.log(object3);
