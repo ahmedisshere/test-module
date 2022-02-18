@@ -1,55 +1,19 @@
-// function sayHello(){
-//     console.log("markeloff");
-// }
+let numbers = [1,2,3,4,5,6];
+let numbers2 = [7,8,9,0,3465];
 
-// function sayHello (){
-//     console.log("markelof");
-//   }
-  
-//   sayHello();
-  
-//   // arrow
-  
-//   let saySomething = (name,age) => 
-//                  {
-//                    console.log(name,age);
-//                  }
-  
-//   saySomething("rahim",29);
+ let arr = [...numbers ,...numbers2,69,96];
 
-  class Vehicle {
-  
-    myVar = "yes";
-   constructor(param,count){
-     this.color =  param;
-     this.passenger = count;
-     
-   }
-   
-   saySomething(){
-     
-     console.log(this.color);
-   }
- }
- 
- let object1 = new Vehicle("red",25);
- let object2 = new Vehicle("blue",69);
- 
- console.log(object1);
- console.log(object2);
- 
- object1.saySomething();
- object2.saySomething();
 
- /// inheritance ->
-
- class Car extends Vehicle {  //-> derived class , must call a superconstructor
-
-     constructor(numwheel,pass,color){
-         super(color,pass);  // this is the key that we must call in inheritance
-         this.wheel = numwheel;
-     }   
+ let gamers = {
+     ign: "markeloff",
+     age: 69
  }
 
- let object3 = new Car(4, 69,"green");
- console.log(object3);
+ let moreGamers = {...gamers, rank: "supreme"};
+
+ console.log(moreGamers);
+
+// rest -> used to merge -> 
+
+let something = (...numarr) => console.log(numarr);
+something(1,2,3,4,5,6,7,8,9,76,6,6,435353453535); // rest operator does the same for objects.
