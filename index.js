@@ -1,7 +1,12 @@
-// destructing -->>
+// array map recap ->> 
 
-let arr = [1,5,19];
+let numbers = [1, 2, 3, 4, 5];
 
-let [a,,b] = arr; // -> if we want to skip the number 5 , we need to use ,, in between of the two variables <-
+let squares = numbers.map((item) => {
 
-console.log(a,b);
+    return item * item;
+});
+
+let cubes = numbers.map(item => item ** 3)
+
+console.log(cubes);
