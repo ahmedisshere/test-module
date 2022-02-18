@@ -1,21 +1,21 @@
-function sayHello(){
-    console.log("markeloff");
-}
+// function sayHello(){
+//     console.log("markeloff");
+// }
 
-function sayHello (){
-    console.log("markelof");
-  }
+// function sayHello (){
+//     console.log("markelof");
+//   }
   
-  sayHello();
+//   sayHello();
   
-  // arrow
+//   // arrow
   
-  let saySomething = (name,age) => 
-                 {
-                   console.log(name,age);
-                 }
+//   let saySomething = (name,age) => 
+//                  {
+//                    console.log(name,age);
+//                  }
   
-  saySomething("rahim",29);
+//   saySomething("rahim",29);
 
   class Vehicle {
   
@@ -42,4 +42,14 @@ function sayHello (){
  object2.saySomething();
 
  /// inheritance ->
- 
+
+ class Car extends Vehicle {  //-> derived class , must call a superconstructor
+
+     constructor(numwheel,pass,color){
+         super(color,pass);  // this is the key that we must call in inheritance
+         this.wheel = numwheel;
+     }   
+ }
+
+ let object3 = new Car(4, 69,"yellow");
+ console.log(object3);
