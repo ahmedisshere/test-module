@@ -8,6 +8,6 @@ let squares = numbers.map((item) => {
     
 });
 
-let cubes = numbers.map(item => item ** 3)
+let cubes = numbers.map(item => item **2)
 
 console.log(cubes);
